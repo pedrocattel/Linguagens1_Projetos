@@ -35,14 +35,20 @@ public class Conta {
             return false;
         }
     }
-    
-    public Conta (int saldo, int numero, Cliente titular, String cpf, String nome, String sobrenome){
-        this.numero = numero;
-        this.saldo = saldo;
+
+    public Conta(String cpf, String nome, String sobrenome) {
         this.titular = new Cliente();
-        this.titular.cpf = cpf;
-        this.titular.nome = nome;
-        this.titular.sobrenome = sobrenome;        
+        this.titular.setNome(nome);
+        this.titular.setCPF(cpf);
+        this.titular.setSobrenome(sobrenome);
+    }
+
+    public void getSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
 }
