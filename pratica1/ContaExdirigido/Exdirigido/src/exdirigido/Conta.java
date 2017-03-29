@@ -6,6 +6,9 @@ public class Conta {
     private double saldo;
     private Cliente titular;
 
+    public void visualizarDados(){
+        this.titular.visualizarcliente();
+    
     public void visualizarSaldo() {
         System.out.println("Saldo = " + this.saldo);
     }

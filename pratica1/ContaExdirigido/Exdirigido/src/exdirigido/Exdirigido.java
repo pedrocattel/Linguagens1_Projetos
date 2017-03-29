@@ -4,7 +4,7 @@ public class Exdirigido {
 
     public static void main(String[] args) {
         Conta c1 = new Conta("39753572824","Pedro","Cattel");
-        //c1.titular.visualizarcliente();
+        c1.titular.visualizarcliente();
         
 
         
