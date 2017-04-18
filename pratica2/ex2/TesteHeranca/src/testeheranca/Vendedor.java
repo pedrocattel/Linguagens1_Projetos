@@ -3,22 +3,21 @@ package testeheranca;
 
 public class Vendedor {
 
-   private String nomeCompleto;
-    private String cpf;
-    private int registro;
-    private double salarioBase;
-    private static double taxaComissao = 0.03;
-    private double horaExtra;
-    private double totalVendas;
-    private GerenteDeVendas gerente;
+    protected String nomeCompleto;
+    protected String cpf;
+    protected int registro;
+    protected double salarioBase;
+    protected static double taxaComissao = 0.03;
+    protected double horaExtra;
+    protected double totalVendas;
+    protected GerenteDeVendas gerente;
     
-    public Vendedor (String n, String c, int reg, double salario, double hora, GerenteDeVendas ger) {
+    public Vendedor (String n, String c, int reg, double salario, double hora) {
         this.setNome(n);
         this.setCpf(c);
         this.setRegistro(reg);
         this.setSalarioBase(salario);
         this.setHoraExtra(hora);
-        this.setGerente(ger);
         ger.incrementarVendedor();
     }
     
@@ -113,4 +112,6 @@ public class Vendedor {
             return false;
         }
     }
+    
+
 }
