@@ -1,9 +1,5 @@
 package exercicio3;
 
-/**
- *
- * @author thomazerlach
- */
 public class Concessionaria {
     
     private int totalFuncionarios;
