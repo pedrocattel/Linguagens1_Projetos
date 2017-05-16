@@ -14,6 +14,7 @@ public class Concessionaria {
         gerente = new Gerente[nGer];
     }
     
+    
     private double calcularTotalVendas () {
         double totalVendas = 0;
         
@@ -62,7 +63,4 @@ public class Concessionaria {
         this.taxaBonus = tx;
     }
     
-//    public void bonificacaoConcessionaria() {
-//        this.bonusIndividual = (this.totalVendas/this.totalFuncionarios)*this.taxaBonus;
-//    }
 }

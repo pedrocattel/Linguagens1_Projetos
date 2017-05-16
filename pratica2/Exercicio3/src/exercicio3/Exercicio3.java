@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercicio3 {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         Scanner scan = new Scanner(System.in);
 
         //perguntar n vendedores
@@ -15,7 +15,24 @@ public class Exercicio3 {
         System.out.println("Quantos Gerentes?");
         int nGer = scan.nextInt();
 
-        Concessionaria cons = new Concessionaria(nVend, nGer);
+        int escolha = scan.nextInt();
+        do {
+            switch (escolha) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+            }
+        }  
+        
+        
+        Concessionaria  cons = new Concessionaria(nVend, nGer);
 
         for (int i = 0; i < nVend; i++) { //pedir vendedores e gerentes
             System.out.println("Nome?");
