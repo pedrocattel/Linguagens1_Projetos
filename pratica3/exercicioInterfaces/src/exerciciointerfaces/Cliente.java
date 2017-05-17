@@ -9,8 +9,24 @@ package exerciciointerfaces;
 
 public class Cliente implements IAutenticavel, IImprimivel {
     
+    private String psw;
+    private String cpf;
+    private String nome;
+    
+    
+    public boolean alterarSenha (String senhaNova, String senhaAntiga){
+        
+        boolean retorno = false;
+        
+        if(senhaAntiga.equals(this.psw)){
+            this.psw = senhaNova;
+           return true;
+        }
+        return retorno;
+    }
+    
     @Override
-    public boolean autenticar(double senha) {
+    public boolean autenticar(String senha) {
         return true;
     }
     

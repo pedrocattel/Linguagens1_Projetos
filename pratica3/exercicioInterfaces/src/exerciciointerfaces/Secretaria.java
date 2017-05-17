@@ -11,6 +11,11 @@ package exerciciointerfaces;
  */
 public class Secretaria extends Funcionario implements IExibicao {
     
+    public boolean antederTelefone(boolean ocupado){
+        return !ocupado;
+        
+    }
+    
     @Override
     public void exibirResumo() {
         System.out.println("Resumo aqui");

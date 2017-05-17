@@ -10,9 +10,9 @@ package exerciciointerfaces;
  * @author pedrocattel
  */
 public abstract class Funcionario {
-    protected String nome;
-    protected int registro;
-    protected double salario;
+    private String nome;
+    private int registro;
+    private double salario;
     
     public String getNome () {
         return this.nome;
