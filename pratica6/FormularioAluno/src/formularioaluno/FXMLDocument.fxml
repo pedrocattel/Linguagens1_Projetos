@@ -7,25 +7,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="368.0" prefWidth="481.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="formularioaluno.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="262.0" prefWidth="403.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="formularioaluno.FXMLDocumentController">
     <children>
+        <Button fx:id="btnApply" layoutX="14.0" layoutY="199.0" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="150.0" text="Cadastrar" textAlignment="CENTER" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <TextField fx:id="txtFName" layoutX="241.0" layoutY="57.0" />
-      <Label layoutX="241.0" layoutY="103.0" text="Idade" />
-      <Label layoutX="241.0" layoutY="167.0" text="Endereço" />
-      <Label layoutX="241.0" layoutY="230.0" text="RG" />
-      <Label fx:id="lbl1" layoutX="241.0" layoutY="33.0" text="Nome Completo" />
-      <TextField fx:id="txtFAge" layoutX="241.0" layoutY="124.0" />
-      <TextField fx:id="txtFieldEnd" layoutX="241.0" layoutY="188.0" />
-      <TextField fx:id="txtFRg" layoutX="241.0" layoutY="247.0" />
-      <TextField fx:id="txtFCpf" layoutX="241.0" layoutY="309.0" />
-      <Label layoutX="242.0" layoutY="292.0" text="CPF" />
-      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+      <Label layoutX="220.0" layoutY="14.0" text="Nome Completo" />
+      <Label layoutX="225.0" layoutY="102.0" text="RG" />
+      <Label layoutX="221.0" layoutY="146.0" text="CPF" />
+      <Label layoutX="221.0" layoutY="195.0" text="Endereço" />
+      <Label layoutX="222.0" layoutY="58.0" text="Idade" />
+      <TextField fx:id="txtN" layoutX="220.0" layoutY="31.0" />
+      <TextField fx:id="txtI" layoutX="220.0" layoutY="75.0" />
+      <TextField fx:id="txtR" layoutX="220.0" layoutY="118.0" />
+      <TextField fx:id="txtC" layoutX="220.0" layoutY="163.0" />
+      <TextField fx:id="txtE" layoutX="220.0" layoutY="212.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnCadastrar" layoutX="56.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnCadastrarAction" prefHeight="27.0" prefWidth="150.0" text="Cadastrar" />
-      <Label fx:id="lblCerto" layoutX="56.0" layoutY="314.0" prefHeight="17.0" prefWidth="150.0" textAlignment="CENTER" />
     </children>
 </AnchorPane>

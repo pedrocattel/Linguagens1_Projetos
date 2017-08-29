@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="276.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="celular.FXMLDocumentController">
+    <children>
+        <Button fx:id="cadastrarBtn" layoutX="10.0" layoutY="455.0" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="255.0" text="Cadastrar!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TableView fx:id="tableContato" layoutX="10.0" layoutY="120.0" prefHeight="327.0" prefWidth="255.0">
+        <columns>
+          <TableColumn fx:id="columnNome" prefWidth="112.0" text="C1" />
+          <TableColumn fx:id="columnNumero" prefWidth="117.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="numberTxt" layoutX="9.0" layoutY="86.0" prefHeight="27.0" prefWidth="255.0" />
+      <Label layoutX="9.0" layoutY="69.0" text="Digite o número de telefone: " />
+      <Label layoutX="10.0" layoutY="25.0" text="Digite o nome do contato: " />
+      <TextField fx:id="nameTxt" layoutX="11.0" layoutY="42.0" prefHeight="27.0" prefWidth="255.0" />
+      <Label layoutX="14.0" layoutY="482.0" text="Digite o contato a ser apagado: " />
+      <TextField fx:id="txtRemover" layoutX="10.0" layoutY="499.0" prefHeight="27.0" prefWidth="255.0" />
+      <Button fx:id="deleteBtn" layoutX="11.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="255.0" text="Delete" />
+    </children>
+</AnchorPane>
