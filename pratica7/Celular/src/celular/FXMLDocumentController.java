@@ -39,7 +39,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField txtPesquisar;
     @FXML
-    private TextField txtAdicionar;
+    private TextField nameTxt;
     @FXML
     private TextField txtRemover;
     @FXML
